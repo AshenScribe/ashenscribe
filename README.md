@@ -1,7 +1,5 @@
 # Hi there, I'm Rishabh Saraswat 👋
 
-Computer Science undergraduate at NIT Srinagar, building production-grade backend systems and contributing to open source.
-
 ---
 
 ## 🚀 Open Source Contributions
