@@ -60,7 +60,6 @@ B.Tech in Computer Science & Engineering (August 2024 – Present)
 
 ---
 ## 📫 Connect with Me
-- [LinkedIn](https://www.linkedin.com/in/rishabh-saraswat-669414294)
 - [GitHub](https://github.com/omniCoder77)
 - [Email](mailto:rishabhsaraswat17@gmail.com)
 - [Portfolio](https://omnicoder77.github.io/omniCoder77/)
