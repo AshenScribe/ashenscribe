@@ -1,28 +1,23 @@
 # Hi there, I'm Rishabh Saraswat 👋
-
+## 🚀 Apache Cassandra CEP-59 Mentee (Apache Software Foundation)
 ---
-
 ## 🚀 Open Source Contributions
 ### Apache Cassandra
 
-- Security: Resolved TLS 1.3 connectivity issues in cassandra-stress; implemented Perfect Forward
+- **Cassandra Enhancement Proposal - 59 (In Progress):** Implementing in-band connection draining to enable graceful client disconnection during rolling maintenance and reduce ReadTimeouts in multi-node clusters.
+
+- **Implemented Guardrail for Unprepared Statements:** Developed a new Guardrail configuration to detect, warn, or reject queries that bypass the prepared statement cache (cache misses). **Impact:** Enhances cluster stability and performance by mitigating the overhead caused by ad-hoc query patterns and enforcing client-side best practices.
+  [Commit](https://github.com/apache/cassandra/commit/eabd2a27f5555a50cba6dc8b74d1f246a91081c0) | [PR #4596](https://github.com/apache/cassandra/pull/4596) | [CASSANDRA-21139](https://issues.apache.org/jira/browse/CASSANDRA-21139)
+
+- **Security:** Resolved TLS 1.3 connectivity issues in cassandra-stress; implemented Perfect Forward
 Secrecy via updated cipher suites to meet modern encryption standards.
 Addresses: [Commit](https://github.com/apache/cassandra/commit/9d89b47c68a6b476135c04b633e7d080a8ebe65f) | [PR](https://github.com/apache/cassandra/pull/4499) | [CASSANDRA-21007](https://issues.apache.org/jira/browse/CASSANDRA-21007)
 
-- **Updated HTTP to HTTPS in README** – Eliminated unnecessary 301 redirects for cleaner, more secure project docs.
-  Addresses:  [Commit](https://github.com/apache/cassandra/commit/5101d76b21234d629cfc27b8ed4320216fc917fc) | [PR](https://github.com/apache/cassandra/pull/4550)| [CASSANDRA-21110](https://issues.apache.org/jira/browse/CASSANDRA-21110)
-
-- Feature Testing: Engineered a simulation script for "blocked" data scenarios; verified storage utility accuracy for file sizes and date formats, optimizing disk-space diagnostics.
-  Addresses: [Commit](https://github.com/apache/cassandra/commit/6bf598dcdec8cc81a870fc5363308022bf11aead) | [PR](https://github.com/apache/cassandra/pull/3993) | [CASSANDRA-20448](https://issues.apache.org/jira/browse/CASSANDRA-20448)
-
-- **Fixed Broken "Getting Started" Link** – Fixed `Getting Started` hyperlink.
-  [Commit](https://github.com/apache/cassandra/commit/5101d76b21234d629cfc27b8ed4320216fc917fc) | [PR #4550](https://github.com/apache/cassandra/pull/4550) | [CASSANDRA-21121](https://issues.apache.org/jira/browse/CASSANDRA-21121)
-
-- **Implemented Guardrail for Unprepared Statements** – Developed a new Guardrail configuration to detect, warn, or reject queries that bypass the prepared statement cache (cache misses). **Impact:** Enhances cluster stability and performance by mitigating the overhead caused by ad-hoc query patterns and enforcing client-side best practices.
-  [Commit](https://github.com/apache/cassandra/commit/eabd2a27f5555a50cba6dc8b74d1f246a91081c0) | [PR #4596](https://github.com/apache/cassandra/pull/4596) | [CASSANDRA-21139](https://issues.apache.org/jira/browse/CASSANDRA-21139)
-
-- **Memory optimization**(review under progress) - Fixed unnecessary string instance creation while MBean creation.
+- **Memory Optimization (PR Under Review):** Eliminated unnecessary String instance creation during MBean registration to reduce memory overhead.
   Pending Commit | [PR#4548](https://github.com/apache/cassandra/pull/4548) |  [CASSANDRA-20446](https://issues.apache.org/jira/browse/CASSANDRA-20446)
+
+- **Testing Infrastructure:** Engineered a simulation script for "blocked" data scenarios; verified storage utility accuracy for file sizes and date formats, optimizing disk-space diagnostics.
+  Addresses: [Commit](https://github.com/apache/cassandra/commit/6bf598dcdec8cc81a870fc5363308022bf11aead) | [PR](https://github.com/apache/cassandra/pull/3993) | [CASSANDRA-20448](https://issues.apache.org/jira/browse/CASSANDRA-20448)
 
 ---
 
@@ -34,7 +29,7 @@ Addresses: [Commit](https://github.com/apache/cassandra/commit/9d89b47c68a6b4761
 ---
 ## 🏗️ Featured Projects
 
-### 1. [Communication Application](https://github.com/omniCoder77/Lynk) – Flagship Project
+### 1. [Communication Application](https://github.com/ashenscribe/Lynk) – Flagship Project
 - **Architecture:** Reactive Microservices (Spring WebFlux) with **Zero-Trust Security Model** across all internal components
 - **Persistence:** Custom time-bucketed partitioning strategy in **Cassandra** for infinite chat history scaling
 - **Security:** Implemented **mTLS** for all service mesh communication and **SCRAM-SHA-512** for Kafka authentication
@@ -44,7 +39,7 @@ Addresses: [Commit](https://github.com/apache/cassandra/commit/9d89b47c68a6b4761
 - **Testing:** Full test coverage with JUnit and Testcontainers for integration tests
 - **Data Layer:** PostgreSQL, Cassandra, Elasticsearch, and Redis for optimal query and caching performance
 
-### 2. [E-Commerce Application](https://github.com/omniCoder77/Synapse)
+### 2. [E-Commerce Application](https://github.com/ashenscribe/Synapse)
 - **Architecture:** Event-Driven Microservices using Spring Boot + WebFlux
 - **Pattern:** Outbox Pattern + Kafka for reliable eventual consistency across services
 - **Persistence:** Polyglot strategy using PostgreSQL (Relational), MongoDB (Product Catalog), Elasticsearch (Search), and Redis (Caching)
@@ -60,6 +55,6 @@ B.Tech in Computer Science & Engineering (August 2024 – Present)
 
 ---
 ## 📫 Connect with Me
-- [GitHub](https://github.com/omniCoder77)
+- [GitHub](https://github.com/ashenscribe)
 - [Email](mailto:rishabhsaraswat17@gmail.com)
 - [Portfolio](https://omnicoder77.github.io/omniCoder77/)
