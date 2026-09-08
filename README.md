@@ -6,7 +6,7 @@
 
 - **Cassandra Enhancement Proposal - 59 ([In Progress](https://github.com/apache/cassandra/pull/4953)):** Implementing in-band connection draining to enable graceful client disconnection during rolling maintenance and reduce ReadTimeouts in multi-node clusters.
 
-- **Implemented Guardrail for Unprepared Statements:** Developed a new Guardrail configuration to detect, warn, or reject queries that bypass the prepared statement cache (cache misses). **Impact:** Enhances cluster stability and performance by mitigating the overhead caused by ad-hoc query patterns and enforcing client-side best practices.
+- **Implemented Guardrail for Unprepared Statements:** Developed a new Guardrail configuration to detect, warn, or reject queries that bypass the prepared statement cache (cache misses).
   [Commit](https://github.com/apache/cassandra/commit/eabd2a27f5555a50cba6dc8b74d1f246a91081c0) | [PR #4596](https://github.com/apache/cassandra/pull/4596) | [CASSANDRA-21139](https://issues.apache.org/jira/browse/CASSANDRA-21139)
 
 - **Security:** Resolved TLS 1.3 connectivity issues in cassandra-stress; implemented Perfect Forward
