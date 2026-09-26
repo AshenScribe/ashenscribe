@@ -9,6 +9,8 @@
 - **Implemented Guardrail for Unprepared Statements:** Developed a new Guardrail configuration to detect, warn, or reject queries that bypass the prepared statement cache (cache misses).
   [Commit](https://github.com/apache/cassandra/commit/eabd2a27f5555a50cba6dc8b74d1f246a91081c0) | [PR #4596](https://github.com/apache/cassandra/pull/4596) | [CASSANDRA-21139](https://issues.apache.org/jira/browse/CASSANDRA-21139)
 
+- **Added a new dispatching technique providing QoS (Quality of Service) to cassandra:(In review)** Developer a new configuration that allows users to choose a QoS servicing mechanism giving ~26% faster reads, +16.8% more throughput. [PR](https://github.com/apache/cassandra/pull/5195) | [Ticket](https://issues.apache.org/jira/browse/CASSANDRA-21571)
+
 - **Security:** Resolved TLS 1.3 connectivity issues in cassandra-stress; implemented Perfect Forward
 Secrecy via updated cipher suites to meet modern encryption standards.
 Addresses: [Commit](https://github.com/apache/cassandra/commit/9d89b47c68a6b476135c04b633e7d080a8ebe65f) | [PR](https://github.com/apache/cassandra/pull/4499) | [CASSANDRA-21007](https://issues.apache.org/jira/browse/CASSANDRA-21007)
