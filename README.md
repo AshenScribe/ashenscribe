@@ -9,7 +9,11 @@
 - **Implemented Guardrail for Unprepared Statements:** Developed a new Guardrail configuration to detect, warn, or reject queries that bypass the prepared statement cache (cache misses).
   [Commit](https://github.com/apache/cassandra/commit/eabd2a27f5555a50cba6dc8b74d1f246a91081c0) | [PR #4596](https://github.com/apache/cassandra/pull/4596) | [CASSANDRA-21139](https://issues.apache.org/jira/browse/CASSANDRA-21139)
 
-- **Added a new dispatching technique providing QoS (Quality of Service) to cassandra:(In review)** Developer a new configuration that allows users to choose a QoS servicing mechanism giving ~26% faster reads, +16.8% more throughput. [PR](https://github.com/apache/cassandra/pull/5195) | [Ticket](https://issues.apache.org/jira/browse/CASSANDRA-21571)
+- **Added a new dispatching technique providing QoS (Quality of Service) to cassandra:(In review)** Developed a new configuration that allows users to choose a QoS servicing mechanism giving ~26% faster reads, +16.8% more throughput. [PR](https://github.com/apache/cassandra/pull/5195) | [Ticket](https://issues.apache.org/jira/browse/CASSANDRA-21571)
+
+- **Driver authentication Timeout Config(In Review):** Developed a new configuration that sets a hard limit for clients to authenticate themselves, dropping connection if client doesn't authenticates itself. [PR](https://github.com/apache/cassandra/pull/5261) | [Ticket](https://issues.apache.org/jira/browse/CASSANDRA-21756)
+
+- **Add Sanitizing of client key-value pair options in driver handshake(In Review):** Added sanitization of invalid values sent by driver in initial handshake. [PR](https://github.com/apache/cassandra/pull/5260) | [Ticket](https://issues.apache.org/jira/browse/CASSANDRA-21755)
 
 - **Security:** Resolved TLS 1.3 connectivity issues in cassandra-stress; implemented Perfect Forward
 Secrecy via updated cipher suites to meet modern encryption standards.
