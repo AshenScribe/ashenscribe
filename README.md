@@ -35,25 +35,19 @@ Addresses: [Commit](https://github.com/apache/cassandra/commit/9d89b47c68a6b4761
 ---
 ## 🏗️ Featured Projects
 
-### 1. [Communication Application](https://github.com/ashenscribe/Lynk) – Flagship Project
-- **Architecture:** Reactive Microservices (Spring WebFlux) with **Zero-Trust Security Model** across all internal components
-- **Persistence:** Custom time-bucketed partitioning strategy in **Cassandra** for infinite chat history scaling
-- **Security:** Implemented **mTLS** for all service mesh communication and **SCRAM-SHA-512** for Kafka authentication
-- **Performance:** Redis Cuckoo Filters for O(1) space-efficient data validation; Lua scripting for distributed rate limiting; sub-50ms real-time messaging via WebSockets + FCM
-- **Resilience:** Resilience4j circuit breakers and Spring Cloud Gateway for robust fault tolerance
-- **Authentication:** Passwordless registration/login with optional SMS/SMTP MFA, JWT tokens with access/refresh rotation
-- **Testing:** Full test coverage with JUnit and Testcontainers for integration tests
-- **Data Layer:** PostgreSQL, Cassandra, Elasticsearch, and Redis for optimal query and caching performance
+### 1. [Communication Application](https://github.com/ashenscribe/Valoq) – Flagship Project
+- **Authentication & Security:** Built a Netty-based auth service for registration, credential verification, RSA-signed JWTs, public-key distribution, and token validation.
+- **Custom Binary Protocol:** Designed a binary TCP protocol supporting stream multiplexing, request correlation, and server-initiated events over persistent connections.
+- **Distributed Messaging & Persistence:** Implemented asynchronous message routing, Cassandra-backed event storage, Redis connection management, acknowledgements, and cursor-based offline replay.
+- **Flow Control & Reliability:** Implemented in-flight limits, high/low-watermark backpressure, delivery/read receipts, and connection lifecycle management.
+- **Testing & Observability:** Built containerized tests for concurrency, protocol fuzzing, reconnection, and failures; achieved 85% coverage and integrated GitHub Actions and OpenTelemetry.
 
-### 2. [E-Commerce Application](https://github.com/ashenscribe/Synapse)
-- **Architecture:** Event-Driven Microservices using Spring Boot + WebFlux
-- **Pattern:** Outbox Pattern + Kafka for reliable eventual consistency across services
-- **Persistence:** Polyglot strategy using PostgreSQL (Relational), MongoDB (Product Catalog), Elasticsearch (Search), and Redis (Caching)
-- **Security:** Complete authentication, SMS/TOTP-based MFA, and rate limiting
-- **Payments:** Integrated Razorpay for payment processing and Twilio for OTP delivery
-- **Communication:** gRPC + Eureka for efficient inter-service communication and discovery
-- **Testing:** Full test coverage with JUnit and Testcontainers
-- **Performance:** Optimized query execution and response times across multiple data stores
+### 2. [E-Commerce Application](https://github.com/ashenscribe/Titan)
+- **No Lost or Duplicate Orders:** Used the transactional outbox pattern with Debezium and Kafka so every accepted order is published exactly once in effect; chaos tests that killed services mid-order showed `0` lost and `0` duplicate orders across [N] runs.
+- **No Lost or Duplicate Orders:** Outbox Pattern + Kafka for reliable eventual consistency across services
+- **Stock That Never Oversells:** Built concurrency-safe inventory reservations with automatic expiry; in a test of `1,000` simultaneous buyers for `10` units, exactly `10` orders succeeded.
+- **Order Workflow With Automatic Undo:** Designed an order saga (state machine) across `order`, `payment`, and `inventory` services; when payment fails, reserved stock is released automatically, covered by one test per failure path.
+- **Stays Up When Services Fail:** Added timeouts, retries, circuit breakers, and idempotency keys on service calls, so a slow or crashed payment service degrades gracefully and a retried request never charges twice.
 ---
 ## 📚 Education
 **National Institute of Technology (NIT) Srinagar**  
