@@ -1,8 +1,4 @@
-# Hi there, I'm Rishabh Saraswat 👋
-## 🚀 Apache Cassandra CEP-59 Mentee (Apache Software Foundation)
----
-## 🚀 Open Source Contributions
-### Apache Cassandra
+# I'm Rishabh Saraswat, an Open Source Contributions at Apache Cassandra, Apache Software Foundation
 
 ## ✅ Merged
 
@@ -31,12 +27,13 @@
 - **Driver Authentication Timeout Config** *(In Review)* — Developed a new configuration that sets a hard limit for clients to authenticate themselves, dropping the connection if the client doesn't authenticate.
   [PR #5261](https://github.com/apache/cassandra/pull/5261)
 ---
-
 ## 🛠 Tech Stack 
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white) ![Spring WebFlux](https://img.shields.io/badge/Spring_WebFlux-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Project Reactor](https://img.shields.io/badge/Project_Reactor-6DB33F?style=flat-square&logo=spring&logoColor=white) ![gRPC](https://img.shields.io/badge/gRPC-244c5a?style=flat-square&logo=grpc&logoColor=white)
+![Netty](https://img.shields.io/badge/Netty-000000?style=flat-square&logo=netty&logoColor=white) ![Lettuce](https://img.shields.io/badge/Lettuce-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Jackson](https://img.shields.io/badge/Jackson-000000?style=flat-square&logo=json&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-RS256-000000?style=flat-square&logo=json-web-tokens&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white) ![Apache Cassandra](https://img.shields.io/badge/Apache_Cassandra-1287B1?style=flat-square&logo=apache-cassandra&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white) ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Zero--Trust](https://img.shields.io/badge/Zero--Trust-mTLS%20%7C%20SCRAM-red?style=flat-square)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Testcontainers](https://img.shields.io/badge/Testcontainers-2496ED?style=flat-square&logo=testcontainers&logoColor=white) ![JUnit5](https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Zero--Trust](https://img.shields.io/badge/Zero--Trust-mTLS%20%7C%20SCRAM-red?style=flat-square)
 ---
 ## 🏗️ Featured Projects
 
